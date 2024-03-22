@@ -15,4 +15,5 @@ public class Rating {
 	private Long userId;
 	private Long hotelId;
 	private int rating;
+	private String feedback;
 }
