@@ -39,5 +39,10 @@ public class RatingServiceImpl implements RatingService{
 		return ratingDao.findByHotelId(id);
 	}
 
+	@Override
+	public List<Rating> getByUserId(Long userId) {
+		return ratingDao.findByUserId(userId);
+	}
+
 	
 }

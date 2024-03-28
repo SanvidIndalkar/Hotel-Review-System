@@ -14,4 +14,6 @@ public interface RatingService {
 
 	Rating getByHotelId(Long id);
 
+	List<Rating> getByUserId(Long userId);
+
 }

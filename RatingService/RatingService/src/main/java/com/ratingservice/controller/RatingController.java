@@ -43,4 +43,10 @@ public class RatingController {
 	public Rating getByHotelId(@PathVariable Long id) {
 		return ratingService.getByHotelId(id);
 	}
+	
+	//get all ratings by userId
+	@GetMapping("/user/{userId}")
+	public List<Rating> getRatingsByUserId(@PathVariable Long userId){
+		return ratingService.getByUserId(userId);
+	}
 }
